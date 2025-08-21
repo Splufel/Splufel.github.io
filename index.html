@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <style>
-    /* General page styling */
+ 
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
@@ -24,33 +24,69 @@
       padding-bottom: 5px;
     }
 
-    /* Layout: two columns */
-    .row {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
+    a {
+      color: #0366d6;
+      text-decoration: none;
     }
 
-    .column {
-      width: 20%;
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+ 
+    .container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+
+    .left-box {
+      width: 48%;
       background: #fff;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    /* Links */
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+
+    .right-column {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    /* Lists */
-    ul {
-      padding-left: 20px;
+  
+    .picture-placeholder {
+      background: #ddd;
+      height: 200px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #555;
+    }
+
+
+    .bottom-right-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+
+    @media (max-width: 768px) {
+      .left-box,
+      .right-column {
+        width: 100%;
+      }
     }
   </style>
 </head>
